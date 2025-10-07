@@ -1,4 +1,9 @@
-# Interview Preparation Platform
+# Interview Portal
+
+[![React](https://img.shields.io/badge/React-17.0.2-blue?logo=react&logoColor=white)](https://reactjs.org/)
+[![Django](https://img.shields.io/badge/Django-4.2-green?logo=django&logoColor=white)](https://www.djangoproject.com/)
+[![License](https://img.shields.io/badge/License-MIT-yellow)](https://opensource.org/licenses/MIT)
+[![GitHub stars](https://img.shields.io/github/stars/username/repo-name?style=social)](https://github.com/username/repo-name/stargazers)
 
 Interview Preparation Platform is a comprehensive tool for interview preparation, allowing candidates to register, apply for interviews, access resources, track their progress, and receive feedback — all in one place. It helps interviewees and recruiters streamline the application and interview process efficiently.
 
@@ -8,47 +13,48 @@ Interview Preparation Platform is a comprehensive tool for interview preparation
 
 ## 🚀 Features
 
-### Login and Signup Functionality
-- Minimal fields for convenient registration: full name, email, SAP ID, graduation year, and password.  
-- Authentication is handled via Token Authentication; users log in using SAP ID and password.
+### Login and Signup
+- Minimal fields for registration: full name, email, SAP ID, graduation year, and password.  
+- Authentication via Token Authentication; login using SAP ID and password.
 
 ### Resources
-- A hub for tutorials, tools, and materials to help interviewees improve their skills.  
-- Organized by categories: frontend, backend, app, and design for easy navigation.
+- Central hub for tutorials, tools, and materials to improve interview skills.  
+- Organized by categories: frontend, backend, app, and design.
 
 ### Application Form
-- Allows candidates to submit applications with resume and GitHub links.  
+- Candidates can submit applications with resume and GitHub links.  
 - Collects all relevant information for interview scheduling.
 
-### Dashboard for Interviewees
-- View and manage upcoming interviews, tasks, and preparation progress.  
-- Includes progress tracker (percentage or circle) to monitor tasks and motivate users.
+### Dashboard
+- Manage upcoming interviews, tasks, and preparation progress.  
+- Includes progress tracker to monitor tasks and motivate users.
 
-### FAQs Section
-- Provides clear answers to common questions to prepare candidates and reduce individual inquiries.
+### FAQs
+- Provides answers to common questions to prepare candidates and reduce inquiries.
 
-### Interview Scheduling Feature
-- Enables interviewers to schedule interviews efficiently.  
-- Simplifies scheduling, reduces back-and-forth communication, and ensures smooth interviews.
+### Interview Scheduling
+- Allows interviewers to schedule interviews efficiently.  
+- Reduces back-and-forth communication and ensures smooth scheduling.
 
 ### Marking System
-- Allows recruiters to record evaluations and scores after interviews.  
+- Recruiters can record evaluations and scores.  
 - Can integrate with recruitment or HR systems.
 
 ### Additional Feedback
-- Lets interviewers provide personalized feedback to candidates.  
+- Interviewers can provide personalized feedback to candidates.  
 - Helps candidates improve and prepare better for future interviews.
 
 ## 🛠️ Tech Stack
 
-- Frontend: React.js  
-- Backend: Django  
+- **Frontend:** React.js  
+- **Backend:** Django  
 
 ## 📸 Demonstrations
 
 ### Interviewee Side
+
 <p align="center">
-  <img width="785" height="426" alt="Login Page" src="src/assets/signup-page.png" />
+  <img width="785" height="426" alt="Signup Page" src="src/assets/signup-page.png" />
 </p>
 
 <p align="center">
@@ -56,7 +62,7 @@ Interview Preparation Platform is a comprehensive tool for interview preparation
 </p>
 
 <p align="center">
-  <img width="785" height="426" alt="Dashboard" src="src/assets/dashbboard.png" />
+  <img width="785" height="426" alt="Dashboard" src="src/assets/dashboard.png" />
 </p>
 
 <p align="center">
@@ -64,7 +70,7 @@ Interview Preparation Platform is a comprehensive tool for interview preparation
 </p>
 
 <p align="center">
-  <img width="785" height="426" alt="Profile" src="src/assets/profile-page.png" />
+  <img width="785" height="426" alt="Profile Page" src="src/assets/profile-page.png" />
 </p>
 
 <p align="center">
@@ -78,21 +84,20 @@ Interview Preparation Platform is a comprehensive tool for interview preparation
 ### Interviewer Side
 
 <p align="center">
-  <img width="785" height="426" alt="Marking & Feedback" src="src/assets/admin-dashboard.png" />
+  <img width="785" height="426" alt="Admin Dashboard" src="src/assets/admin-dashboard.png" />
 </p>
 
 <p align="center">
-  <img width="785" height="426" alt="Marking & Feedback" src="src/assets/admin-student-data.png" />
+  <img width="785" height="426" alt="Admin Student Data" src="src/assets/admin-student-data.png" />
 </p>
 
 ## ⚙️ Installation & Setup (Local)
 
 ### Clone the Repository
-
 ```bash
 git clone https://github.com/username/repo-name.git
 cd repo-name
-```
+
 ### Frontend
 
 ```bash
