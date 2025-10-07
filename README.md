@@ -1,118 +1,60 @@
-Interview Preparation Platform
+# Interview Portal
 
-This platform is a comprehensive tool for interview preparation, allowing candidates to register, apply for interviews, access resources, track their progress, and receive feedback—all in one place. It is designed to help interviewees and recruiters streamline the application and interview process efficiently.
+Interview Portal is a comprehensive tool for interview preparation, allowing candidates to register, apply for interviews, access resources, track their progress, and receive feedback — all in one place. It helps interviewees and recruiters streamline the application and interview process efficiently.
 
-🚀 Features
+<p align="center"><img width="785" height="426" alt="Dashboard Snapshot" src="src/assets/dashboard.png" /></p>
 
-Login and Signup Functionality
+## 🚀 Features
 
-Convenient registration page with minimal fields: full name, email, SAP ID, graduation year, and password.
+### Login and Signup Functionality
+- Minimal fields for convenient registration: full name, email, SAP ID, graduation year, and password.  
+- Authentication is handled via Token Authentication; users log in using SAP ID and password.
 
-Users authenticate using Token Authentication, logging in with SAP ID and password.
+### Resources
+- A hub for tutorials, tools, and materials to help interviewees improve their skills.  
+- Organized by categories: frontend, backend, app, and design for easy navigation.
 
-Resources
+### Application Form
+- Allows candidates to submit applications with resume and GitHub links.  
+- Collects all relevant information for interview scheduling.
 
-A dedicated resources page acting as a hub for tutorials, tools, and materials.
+### Dashboard for Interviewees
+- View and manage upcoming interviews, tasks, and preparation progress.  
+- Includes progress tracker (percentage or circle) to monitor tasks and motivate users.
 
-Organized by categories such as frontend, backend, app, and design for easy access.
+### FAQs Section
+- Provides clear answers to common questions to prepare candidates and reduce individual inquiries.
 
-Application Form
+### Interview Scheduling Feature
+- Enables interviewers to schedule interviews efficiently.  
+- Simplifies scheduling, reduces back-and-forth communication, and ensures smooth interviews.
 
-Allows candidates to submit interview applications.
+### Marking System
+- Allows recruiters to record evaluations and scores after interviews.  
+- Can integrate with recruitment or HR systems.
 
-Fields include resume link, GitHub repository link, and other relevant information.
+### Additional Feedback
+- Lets interviewers provide personalized feedback to candidates.  
+- Helps candidates improve and prepare better for future interviews.
 
-Dashboard for Interviewees
+## 🛠️ Tech Stack
 
-Personalized dashboard to view and manage upcoming interviews and tasks.
+- Frontend: React.js  
+- Backend: Django  
 
-Includes a progress tracker to monitor interview preparation and task completion.
+## 📸 Demonstrations
 
-FAQs Section
+<!-- <p align="center"><img width="785" height="426" alt="Login Page" src="https://raw.githubusercontent.com/username/repo-name/main/assets/login-page.png" /></p>
+<p align="center"><img width="785" height="426" alt="Resources Page" src="https://raw.githubusercontent.com/username/repo-name/main/assets/resources-page.png" /></p>
+<p align="center"><img width="785" height="426" alt="Application Form" src="https://raw.githubusercontent.com/username/repo-name/main/assets/application-form.png" /></p>
+<p align="center"><img width="785" height="426" alt="Dashboard" src="https://raw.githubusercontent.com/username/repo-name/main/assets/dashboard.png" /></p>
+<p align="center"><img width="785" height="426" alt="Interview Scheduling" src="https://raw.githubusercontent.com/username/repo-name/main/assets/interview-scheduling.png" /></p>
+<p align="center"><img width="785" height="426" alt="Marking & Feedback" src="https://raw.githubusercontent.com/username/repo-name/main/assets/marking-feedback.png" /></p> -->
 
-Provides clear answers to common questions to help candidates feel prepared and confident.
+## ⚙️ Installation & Setup (Local)
 
-Interview Scheduling Feature
+### Clone the Repository
 
-Allows interviewers to efficiently schedule interviews with candidates.
-
-Simplifies the process, reducing manual coordination and communication.
-
-Marking System
-
-Enables recruiters to record scores or evaluations for candidates after interviews.
-
-Can be integrated into recruitment management or HR systems.
-
-Additional Feedback
-
-Allows interviewers to provide personalized feedback to candidates.
-
-Helps candidates improve and prepares them for future interviews.
-
-🛠️ Tech Stack
-
-Frontend: React.js
-
-Backend: Django
-
-📸 Demonstrations / Screenshots
-<p align="center"> <img width="785" src="https://raw.githubusercontent.com/username/repo-name/main/assets/login-page.png" alt="Login Page" /> </p> <p align="center"> <img width="785" src="https://raw.githubusercontent.com/username/repo-name/main/assets/resources-page.png" alt="Resources Page" /> </p> <p align="center"> <img width="785" src="https://raw.githubusercontent.com/username/repo-name/main/assets/application-form.png" alt="Application Form" /> </p> <p align="center"> <img width="785" src="https://raw.githubusercontent.com/username/repo-name/main/assets/dashboard.png" alt="Dashboard" /> </p> <p align="center"> <img width="785" src="https://raw.githubusercontent.com/username/repo-name/main/assets/interview-scheduling.png" alt="Interview Scheduling" /> </p> <p align="center"> <img width="785" src="https://raw.githubusercontent.com/username/repo-name/main/assets/marking-feedback.png" alt="Marking & Feedback" /> </p>
-🔗 Feature Usage / API Endpoints
-Feature / Action	Method	Endpoint / URL (if applicable)	Description
-Login	POST	/api/login/	Authenticate users with SAP ID and password. Returns a token for session.
-Signup / Registration	POST	/api/register/	Create a new user account with full name, email, SAP ID, graduation year, and password.
-View Resources	GET	/api/resources/	Fetch categorized resources (frontend, backend, app, design) for interview prep.
-Submit Application Form	POST	/api/application/	Submit candidate’s resume, GitHub link, and other info for interview.
-View Dashboard	GET	/api/dashboard/	View upcoming interviews, tasks, and preparation progress.
-Schedule Interview	POST	/api/schedule-interview/	Interviewers can schedule interviews with candidates.
-Mark Interview	POST	/api/mark-interview/	Recruiters can record evaluation scores for candidates.
-Provide Feedback	POST	/api/feedback/	Interviewers can give additional feedback to candidates.
-View FAQs	GET	/api/faqs/	Retrieve frequently asked questions for interview preparation.
-
-⚡ Tip: Replace endpoints with your actual Django routes if different.
-
-⚙️ Installation & Setup (Local)
-
-Clone the repository:
-
+```bash
 git clone https://github.com/username/repo-name.git
 cd repo-name
-
-
-Install dependencies:
-
-# Frontend
-cd frontend
-npm install
-
-# Backend
-cd ../backend
-pip install -r requirements.txt
-
-
-Set environment variables in .env:
-
-SECRET_KEY=your_django_secret_key
-DEBUG=True
-DATABASE_URL=your_database_url
-
-
-Run the application:
-
-# Backend
-python manage.py runserver
-
-# Frontend
-npm start
-
-
-Access the platform at:
-
-http://localhost:3000
-
-👨‍💻 Contributors
-
-Mahek Upadhye
-
-Rishab Pendam
