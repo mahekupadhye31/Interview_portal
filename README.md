@@ -3,7 +3,6 @@
 [![React](https://img.shields.io/badge/React-17.0.2-blue?logo=react&logoColor=white)](https://reactjs.org/)
 [![Django](https://img.shields.io/badge/Django-4.2-green?logo=django&logoColor=white)](https://www.djangoproject.com/)
 [![License](https://img.shields.io/badge/License-MIT-yellow)](https://opensource.org/licenses/MIT)
-[![GitHub stars](https://img.shields.io/github/stars/username/repo-name?style=social)](https://github.com/username/repo-name/stargazers)
 
 Interview Preparation Platform is a comprehensive tool for interview preparation, allowing candidates to register, apply for interviews, access resources, track their progress, and receive feedback — all in one place. It helps interviewees and recruiters streamline the application and interview process efficiently.
 
@@ -97,7 +96,7 @@ Interview Preparation Platform is a comprehensive tool for interview preparation
 ```bash
 git clone https://github.com/username/repo-name.git
 cd repo-name
-
+```
 ### Frontend
 
 ```bash
@@ -134,8 +133,10 @@ npm start
 | **GET**  | `/api/resources/`          | Retrieve all categorized resources              |
 | **POST** | `/api/application/`        | Submit interview application                    |
 | **GET**  | `/api/dashboard/`          | View dashboard with progress and upcoming tasks |
-| **POST** | `/api/schedule-interview/` | Schedule an interview for a candidate           |
-| **POST** | `/api/mark-interview/`     | Record interview evaluation / scores            |
+| **POST** | `/api/schedule-interview/` | Schedule an interview for a candidate           |         |
 | **POST** | `/api/feedback/`           | Provide additional feedback to interviewee      |
 | **GET**  | `/api/faqs/`               | Retrieve frequently asked questions             |
 
+## 👨‍💻 Contributors - 
+[Mahek Upadhye](https://github.com/mahekupadhye31)
+[Vatsal Shah](https://github.com/vatsalshah041)
