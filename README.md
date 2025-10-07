@@ -1,8 +1,10 @@
-# Interview Portal
+# Interview Preparation Platform
 
-Interview Portal is a comprehensive tool for interview preparation, allowing candidates to register, apply for interviews, access resources, track their progress, and receive feedback — all in one place. It helps interviewees and recruiters streamline the application and interview process efficiently.
+Interview Preparation Platform is a comprehensive tool for interview preparation, allowing candidates to register, apply for interviews, access resources, track their progress, and receive feedback — all in one place. It helps interviewees and recruiters streamline the application and interview process efficiently.
 
-<p align="center"><img width="785" height="426" alt="Dashboard Snapshot" src="src/assets/dashboard.png" /></p>
+<p align="center">
+  <img width="785" height="426" alt="Dashboard Snapshot" src="src/assets/dashboard.png" />
+</p>
 
 ## 🚀 Features
 
@@ -44,12 +46,44 @@ Interview Portal is a comprehensive tool for interview preparation, allowing can
 
 ## 📸 Demonstrations
 
-<!-- <p align="center"><img width="785" height="426" alt="Login Page" src="https://raw.githubusercontent.com/username/repo-name/main/assets/login-page.png" /></p>
-<p align="center"><img width="785" height="426" alt="Resources Page" src="https://raw.githubusercontent.com/username/repo-name/main/assets/resources-page.png" /></p>
-<p align="center"><img width="785" height="426" alt="Application Form" src="https://raw.githubusercontent.com/username/repo-name/main/assets/application-form.png" /></p>
-<p align="center"><img width="785" height="426" alt="Dashboard" src="https://raw.githubusercontent.com/username/repo-name/main/assets/dashboard.png" /></p>
-<p align="center"><img width="785" height="426" alt="Interview Scheduling" src="https://raw.githubusercontent.com/username/repo-name/main/assets/interview-scheduling.png" /></p>
-<p align="center"><img width="785" height="426" alt="Marking & Feedback" src="https://raw.githubusercontent.com/username/repo-name/main/assets/marking-feedback.png" /></p> -->
+### Interviewee Side
+<p align="center">
+  <img width="785" height="426" alt="Login Page" src="src/assets/signup-page.png" />
+</p>
+
+<p align="center">
+  <img width="785" height="426" alt="Login Page" src="src/assets/login-page.png" />
+</p>
+
+<p align="center">
+  <img width="785" height="426" alt="Resources Page" src="src/assets/dashbboard.png" />
+</p>
+
+<p align="center">
+  <img width="785" height="426" alt="Application Form" src="src/assets/application-form.png" />
+</p>
+
+<p align="center">
+  <img width="785" height="426" alt="Dashboard" src="src/assets/profile-page.png" />
+</p>
+
+<p align="center">
+  <img width="785" height="426" alt="Interview Scheduling" src="src/assets/resources.png" />
+</p>
+
+<p align="center">
+  <img width="785" height="426" alt="Marking & Feedback" src="src/assets/faqs.png" />
+</p>
+
+### Interviewer Side
+
+<p align="center">
+  <img width="785" height="426" alt="Marking & Feedback" src="src/assets/admin-dashboard.png" />
+</p>
+
+<p align="center">
+  <img width="785" height="426" alt="Marking & Feedback" src="src/assets/admin-student-data.png" />
+</p>
 
 ## ⚙️ Installation & Setup (Local)
 
@@ -58,3 +92,45 @@ Interview Portal is a comprehensive tool for interview preparation, allowing can
 ```bash
 git clone https://github.com/username/repo-name.git
 cd repo-name
+```
+### Frontend
+
+```bash
+cd frontend
+npm install
+```
+### Backend
+
+```bash
+cd ../backend
+pip install -r requirements.txt
+```
+### Create a .env file in the backend root
+
+``` bash
+SECRET_KEY=your_django_secret_key
+DEBUG=True
+DATABASE_URL=your_database_url
+```
+### Run the backend
+``` bash
+python manage.py runserver
+```
+### Run the frontend
+```bash
+npm start
+```
+## 🔗 Feature / API Endpoints
+
+| Method   | Endpoint                   | Description                                     |
+| -------- | -------------------------- | ----------------------------------------------- |
+| **POST** | `/api/register/`           | Register a new user account                     |
+| **POST** | `/api/login/`              | Login with SAP ID and password                  |
+| **GET**  | `/api/resources/`          | Retrieve all categorized resources              |
+| **POST** | `/api/application/`        | Submit interview application                    |
+| **GET**  | `/api/dashboard/`          | View dashboard with progress and upcoming tasks |
+| **POST** | `/api/schedule-interview/` | Schedule an interview for a candidate           |
+| **POST** | `/api/mark-interview/`     | Record interview evaluation / scores            |
+| **POST** | `/api/feedback/`           | Provide additional feedback to interviewee      |
+| **GET**  | `/api/faqs/`               | Retrieve frequently asked questions             |
+
