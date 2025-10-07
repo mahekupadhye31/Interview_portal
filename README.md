@@ -137,6 +137,6 @@ npm start
 | **POST** | `/api/feedback/`           | Provide additional feedback to interviewee      |
 | **GET**  | `/api/faqs/`               | Retrieve frequently asked questions             |
 
-## 👨‍💻 Contributors - 
-[Mahek Upadhye](https://github.com/mahekupadhye31)
-[Vatsal Shah](https://github.com/vatsalshah041)
+## 👨‍💻 Contributors 
+- [Mahek Upadhye](https://github.com/mahekupadhye31)
+- [Vatsal Shah](https://github.com/vatsalshah041)
