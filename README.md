@@ -56,7 +56,7 @@ Interview Preparation Platform is a comprehensive tool for interview preparation
 </p>
 
 <p align="center">
-  <img width="785" height="426" alt="Resources Page" src="src/assets/dashbboard.png" />
+  <img width="785" height="426" alt="Dashboard" src="src/assets/dashbboard.png" />
 </p>
 
 <p align="center">
@@ -64,15 +64,15 @@ Interview Preparation Platform is a comprehensive tool for interview preparation
 </p>
 
 <p align="center">
-  <img width="785" height="426" alt="Dashboard" src="src/assets/profile-page.png" />
+  <img width="785" height="426" alt="Profile" src="src/assets/profile-page.png" />
 </p>
 
 <p align="center">
-  <img width="785" height="426" alt="Interview Scheduling" src="src/assets/resources.png" />
+  <img width="785" height="426" alt="Resources" src="src/assets/resources.png" />
 </p>
 
 <p align="center">
-  <img width="785" height="426" alt="Marking & Feedback" src="src/assets/faqs.png" />
+  <img width="785" height="426" alt="FAQs" src="src/assets/faqs.png" />
 </p>
 
 ### Interviewer Side
