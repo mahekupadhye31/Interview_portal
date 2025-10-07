@@ -1,70 +1,118 @@
-# Getting Started with Create React App
+Interview Preparation Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This platform is a comprehensive tool for interview preparation, allowing candidates to register, apply for interviews, access resources, track their progress, and receive feedback—all in one place. It is designed to help interviewees and recruiters streamline the application and interview process efficiently.
 
-## Available Scripts
+🚀 Features
 
-In the project directory, you can run:
+Login and Signup Functionality
 
-### `npm start`
+Convenient registration page with minimal fields: full name, email, SAP ID, graduation year, and password.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Users authenticate using Token Authentication, logging in with SAP ID and password.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Resources
 
-### `npm test`
+A dedicated resources page acting as a hub for tutorials, tools, and materials.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Organized by categories such as frontend, backend, app, and design for easy access.
 
-### `npm run build`
+Application Form
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Allows candidates to submit interview applications.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Fields include resume link, GitHub repository link, and other relevant information.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Dashboard for Interviewees
 
-### `npm run eject`
+Personalized dashboard to view and manage upcoming interviews and tasks.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Includes a progress tracker to monitor interview preparation and task completion.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+FAQs Section
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Provides clear answers to common questions to help candidates feel prepared and confident.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Interview Scheduling Feature
 
-## Learn More
+Allows interviewers to efficiently schedule interviews with candidates.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Simplifies the process, reducing manual coordination and communication.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Marking System
 
-### Code Splitting
+Enables recruiters to record scores or evaluations for candidates after interviews.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Can be integrated into recruitment management or HR systems.
 
-### Analyzing the Bundle Size
+Additional Feedback
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Allows interviewers to provide personalized feedback to candidates.
 
-### Making a Progressive Web App
+Helps candidates improve and prepares them for future interviews.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+🛠️ Tech Stack
 
-### Advanced Configuration
+Frontend: React.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Backend: Django
 
-### Deployment
+📸 Demonstrations / Screenshots
+<p align="center"> <img width="785" src="https://raw.githubusercontent.com/username/repo-name/main/assets/login-page.png" alt="Login Page" /> </p> <p align="center"> <img width="785" src="https://raw.githubusercontent.com/username/repo-name/main/assets/resources-page.png" alt="Resources Page" /> </p> <p align="center"> <img width="785" src="https://raw.githubusercontent.com/username/repo-name/main/assets/application-form.png" alt="Application Form" /> </p> <p align="center"> <img width="785" src="https://raw.githubusercontent.com/username/repo-name/main/assets/dashboard.png" alt="Dashboard" /> </p> <p align="center"> <img width="785" src="https://raw.githubusercontent.com/username/repo-name/main/assets/interview-scheduling.png" alt="Interview Scheduling" /> </p> <p align="center"> <img width="785" src="https://raw.githubusercontent.com/username/repo-name/main/assets/marking-feedback.png" alt="Marking & Feedback" /> </p>
+🔗 Feature Usage / API Endpoints
+Feature / Action	Method	Endpoint / URL (if applicable)	Description
+Login	POST	/api/login/	Authenticate users with SAP ID and password. Returns a token for session.
+Signup / Registration	POST	/api/register/	Create a new user account with full name, email, SAP ID, graduation year, and password.
+View Resources	GET	/api/resources/	Fetch categorized resources (frontend, backend, app, design) for interview prep.
+Submit Application Form	POST	/api/application/	Submit candidate’s resume, GitHub link, and other info for interview.
+View Dashboard	GET	/api/dashboard/	View upcoming interviews, tasks, and preparation progress.
+Schedule Interview	POST	/api/schedule-interview/	Interviewers can schedule interviews with candidates.
+Mark Interview	POST	/api/mark-interview/	Recruiters can record evaluation scores for candidates.
+Provide Feedback	POST	/api/feedback/	Interviewers can give additional feedback to candidates.
+View FAQs	GET	/api/faqs/	Retrieve frequently asked questions for interview preparation.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+⚡ Tip: Replace endpoints with your actual Django routes if different.
 
-### `npm run build` fails to minify
+⚙️ Installation & Setup (Local)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Clone the repository:
+
+git clone https://github.com/username/repo-name.git
+cd repo-name
+
+
+Install dependencies:
+
+# Frontend
+cd frontend
+npm install
+
+# Backend
+cd ../backend
+pip install -r requirements.txt
+
+
+Set environment variables in .env:
+
+SECRET_KEY=your_django_secret_key
+DEBUG=True
+DATABASE_URL=your_database_url
+
+
+Run the application:
+
+# Backend
+python manage.py runserver
+
+# Frontend
+npm start
+
+
+Access the platform at:
+
+http://localhost:3000
+
+👨‍💻 Contributors
+
+Mahek Upadhye
+
+Rishab Pendam
